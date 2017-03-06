@@ -17,6 +17,8 @@ from sklearn.metrics import roc_auc_score
 
 # An efficient data structure. 
 import pandas as pd
+import numpy as np
+np.random.seed(100)
 
 # Import the data
 X = pd.read_csv("train.csv")
@@ -242,8 +244,3 @@ print ("Final C-stat: ", roc)
 # >+ Impute Age with predicted value from Regressing Age on SibSP and Parch
 # >+ max_features = 0.9
 # >+ min_samples_leaf = 7
-
-# In[ ]:
-
-
-
